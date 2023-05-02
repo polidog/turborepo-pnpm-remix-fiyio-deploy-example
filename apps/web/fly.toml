@@ -1,0 +1,16 @@
+# fly.toml app configuration file generated for wild-leaf-333 on 2023-05-02T10:28:40+09:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = "your app"
+primary_region = "nrt"
+
+[env]
+  PORT = "8080"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
